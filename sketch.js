@@ -2,7 +2,7 @@
 // algorithm from Maze generation algorithm https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker
 // Recursive implementation
 
-const cols = 10, rows = 10;
+const cols = 15, rows = 15;
 let w = 40;
 let grid = [];
 let curCell;
