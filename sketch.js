@@ -2,7 +2,7 @@
 // algorithm from Maze generation algorithm https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker
 // Recursive implementation
 
-const cols = 20, rows = 20;
+const cols = 10, rows = 10;
 let w = 40;
 let grid = [];
 let curCell;
@@ -50,6 +50,9 @@ function draw() {
     curCell = next;
   } else if (pile.length > 0) {
     curCell = pile.pop();
+  } else {
+    console.log('FINI ! Nous avons là un bien beau labyrinthe');
+    noLoop();
   }
 }
 
